@@ -1,15 +1,18 @@
 CREATE DATABASE StudentRecordManagementSystem;
 GO
+
 USE StudentRecordManagementSystem;
 GO
+
 ---- Create tables
 CREATE TABLE TblRole(
-	RoleId INT PRIMARY KEY IDENTITY(1,1),
-	RoleName NVARCHAR(20) NOT NULL UNIQUE,
-	IsActive BIT NOT NULL DEFAULT 1
+    RoleId INT PRIMARY KEY IDENTITY(1,1),
+    RoleName NVARCHAR(20) NOT NULL UNIQUE,
+    IsActive BIT NOT NULL DEFAULT 1
 );
 GO
 
+-- Students Table
 CREATE TABLE TblStudent (
     Id INT PRIMARY KEY IDENTITY(1,1),
     RollNumber INT NOT NULL UNIQUE,
@@ -28,6 +31,7 @@ CREATE TABLE TblStudent (
 );
 GO
 
+-- Users Table
 CREATE TABLE TblUser (
     UserId INT PRIMARY KEY IDENTITY(1,1),
     Email NVARCHAR(100) NOT NULL UNIQUE,
@@ -36,24 +40,28 @@ CREATE TABLE TblUser (
     IsDefaultPassword BIT NOT NULL DEFAULT 1,
     StudentId INT NULL,
     CONSTRAINT FK_Users_Students FOREIGN KEY (StudentId) REFERENCES TblStudent(Id),
-	CONSTRAINT FK_Users_Roles FOREIGN KEY (UserRole) REFERENCES TblRole(RoleName)
+    CONSTRAINT FK_Users_Roles FOREIGN KEY (UserRole) REFERENCES TblRole(RoleName)
 );
 GO
 
+-- Insert Roles
 INSERT INTO TblRole (RoleName) VALUES ('Admin'),('Invigilator'),('Student');
+GO
 DECLARE @Password NVARCHAR(50) = 'admin123';
-DECLARE @PasswordHash VARBINARY(32);
-DECLARE @PasswordHashString NVARCHAR(256);
-
-SET @PasswordHash = HASHBYTES('SHA2_256', @Password);
-SET @PasswordHashString = CONVERT(NVARCHAR(256), @PasswordHash, 2);
-
--- insert the admin using the variable
+DECLARE @Hash VARBINARY(32);
+DECLARE @HashString NVARCHAR(64);
+SET @Hash = HASHBYTES('SHA2_256', @Password);
+SET @HashString = UPPER(CONVERT(NVARCHAR(64), @Hash, 2)); -- Style 2 = hex without dashes
+SELECT @HashString; -- Result: 240BE518FABD2724DDB6F04EEB1DA5967448D7E831C08C8FA822809F74C720A9
+--
+-- Insert Admin User
+-- Email: admin@gmail.com
+-- Password: admin123
+-- Hash: SHA256 = 240BE518FABD2724DDB6F04EEB1DA5967448D7E831C08C8FA822809F74C720A9
 INSERT INTO TblUser (Email, PasswordHash, UserRole, IsDefaultPassword)
 VALUES (
     'admin@gmail.com',
-    -- password: "admin123"
-    @PasswordHashString,
+    @HashString,
     'Admin',
     0
 );
