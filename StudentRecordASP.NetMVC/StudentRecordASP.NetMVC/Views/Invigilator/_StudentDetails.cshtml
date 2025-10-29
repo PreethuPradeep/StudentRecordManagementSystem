@@ -1,0 +1,83 @@
+@model StudentRecordASP.NetMVC.Models.Student
+
+<div class="modal-header">
+    <h5 class="modal-title">Student Details</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+    <div class="container-fluid">
+        <div class="row mb-3">
+            <div class="col-sm-4"><strong>Roll Number:</strong></div>
+            <div class="col-sm-8">@Model.RolLNumber</div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-sm-4"><strong>Name:</strong></div>
+            <div class="col-sm-8">@Model.Name</div>
+        </div>
+        <hr />
+        <h6 class="mb-3">Marks</h6>
+        <div class="row mb-2">
+            <div class="col-sm-4"><strong>Maths:</strong></div>
+            <div class="col-sm-8">@Model.Maths</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-sm-4"><strong>Physics:</strong></div>
+            <div class="col-sm-8">@Model.Physics</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-sm-4"><strong>Chemistry:</strong></div>
+            <div class="col-sm-8">@Model.Chemistry</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-sm-4"><strong>English:</strong></div>
+            <div class="col-sm-8">@Model.English</div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-sm-4"><strong>Programming:</strong></div>
+            <div class="col-sm-8">@Model.Programming</div>
+        </div>
+        <hr />
+        <div class="row mb-3">
+            <div class="col-sm-4"><strong>Total Marks:</strong></div>
+            <div class="col-sm-8">
+                <strong class="text-primary">@(Model.Maths + Model.Physics + Model.Chemistry + Model.English + Model.Programming) / 500</strong>
+            </div>
+        </div>
+        
+        @if (ViewBag.LoginEmail != null)
+        {
+            <hr />
+            <h6 class="mb-3 text-success">Login Credentials</h6>
+            <div class="alert alert-info mb-3">
+                <div class="row mb-2">
+                    <div class="col-sm-4"><strong>Email:</strong></div>
+                    <div class="col-sm-8"><code class="text-primary">@ViewBag.LoginEmail</code></div>
+                </div>
+                <div class="row mb-0">
+                    <div class="col-sm-4"><strong>Password:</strong></div>
+                    <div class="col-sm-8">
+                        <code class="text-primary">@ViewBag.DefaultPassword</code>
+                        @if (ViewBag.IsDefaultPassword == true)
+                        {
+                            <span class="badge bg-warning text-dark ms-2">Default</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-success ms-2">Changed</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <hr />
+            <div class="alert alert-warning mb-0">
+                <small><i>No login account created for this student.</i></small>
+            </div>
+        }
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+</div>

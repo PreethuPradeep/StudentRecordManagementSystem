@@ -1,0 +1,191 @@
+@model StudentRecordASP.NetMVC.ViewModel.CreateStudentViewModel
+@{
+    ViewData["Title"] = "Create Student";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-7">
+        <div class="card shadow">
+            <div class="card-header bg-success text-white text-center py-3">
+                <h4 class="mb-0">Create New Student</h4>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="CreateStudent" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                    
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold">Student Name</label>
+                        <input asp-for="Name" class="form-control form-control-lg" id="studentName" placeholder="Enter student name" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3" id="emailPreviewSection" style="display: none;">
+                        <label class="form-label fw-semibold">Generated Email</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control form-control-lg" id="generatedEmail" readonly />
+                            <button type="button" class="btn btn-outline-secondary" id="editEmailBtn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                    <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <input type="hidden" id="finalEmail" name="FinalEmail" />
+                        <div id="emailStatus" class="mt-2"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Maths" class="form-label fw-semibold">Maths</label>
+                            <input asp-for="Maths" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Maths" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Physics" class="form-label fw-semibold">Physics</label>
+                            <input asp-for="Physics" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Physics" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Chemistry" class="form-label fw-semibold">Chemistry</label>
+                            <input asp-for="Chemistry" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Chemistry" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="English" class="form-label fw-semibold">English</label>
+                            <input asp-for="English" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="English" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Programming" class="form-label fw-semibold">Programming</label>
+                            <input asp-for="Programming" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Programming" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="d-grid gap-2 mt-3">
+                        <button type="submit" class="btn btn-success btn-lg">Create Student</button>
+                        <a asp-action="Dashboard" class="btn btn-outline-secondary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script>
+        $(document).ready(function() {
+            var isEmailEditable = false;
+            
+            $('#studentName').on('input', function() {
+                var name = $(this).val().trim();
+                if (name.length > 0) {
+                    generateEmail(name);
+                } else {
+                    $('#emailPreviewSection').hide();
+                }
+            });
+
+            $('#editEmailBtn').on('click', function() {
+                if (!isEmailEditable) {
+                    // Make email editable
+                    $('#generatedEmail').prop('readonly', false);
+                    $('#generatedEmail').focus();
+                    $(this).html('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-lg" viewBox="0 0 16 16"><path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.267.267 0 0 1 .02-.022Z"/></svg>');
+                    isEmailEditable = true;
+                } else {
+                    // Save email
+                    var email = $('#generatedEmail').val().trim();
+                    if (validateEmail(email)) {
+                        $('#generatedEmail').prop('readonly', true);
+                        $('#finalEmail').val(email);
+                        checkEmailExists(email);
+                        $(this).html('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>');
+                        isEmailEditable = false;
+                    } else {
+                        alert('Please enter a valid email address');
+                        $('#generatedEmail').focus();
+                    }
+                }
+            });
+
+            $('#generatedEmail').on('blur', function() {
+                if (isEmailEditable) {
+                    var email = $(this).val().trim();
+                    if (validateEmail(email)) {
+                        $('#finalEmail').val(email);
+                        checkEmailExists(email);
+                    }
+                }
+            });
+
+            function generateEmail(name) {
+                var nameParts = name.trim().split(/\s+/).filter(function(part) { return part.length > 0; });
+                
+                if (nameParts.length === 0) return;
+                
+                var emailPart = '';
+                if (nameParts.length === 1) {
+                    emailPart = nameParts[0].toLowerCase();
+                } else {
+                    var firstName = nameParts[0];
+                    var lastName = nameParts.slice(1).join('').toLowerCase();
+                    emailPart = (firstName + lastName).toLowerCase();
+                }
+                
+                var domain = 'gmail.com';
+                var atSymbol = String.fromCharCode(64);
+                var email = emailPart + atSymbol + domain;
+                $('#generatedEmail').val(email);
+                $('#finalEmail').val(email);
+                $('#emailPreviewSection').show();
+                checkEmailExists(email);
+            }
+
+            function validateEmail(email) {
+                var atSymbol = String.fromCharCode(64);
+                var atIndex = email.indexOf(atSymbol);
+                if (atIndex <= 0 || atIndex === email.length - 1) return false;
+                var beforeAt = email.substring(0, atIndex);
+                var afterAt = email.substring(atIndex + 1);
+                if (beforeAt.indexOf(' ') >= 0 || beforeAt.length === 0) return false;
+                if (afterAt.indexOf('.') <= 0 || afterAt.length < 3) return false;
+                return true;
+            }
+
+            function checkEmailExists(email) {
+                if (!email || email === '') {
+                    $('#emailStatus').html('');
+                    return;
+                }
+
+                $.ajax({
+                    url: '@Html.Raw(Url.Action("CheckEmailExists", "Invigilator"))',
+                    type: 'GET',
+                    data: { email: email },
+                    success: function(exists) {
+                        if (exists) {
+                            $('#emailStatus').html('<small class="text-warning"><strong>⚠ Warning:</strong> This email already exists. Please modify it before creating the student.</small>');
+                            $('#generatedEmail').addClass('is-invalid');
+                        } else {
+                            $('#emailStatus').html('<small class="text-success">✓ Email is available</small>');
+                            $('#generatedEmail').removeClass('is-invalid').addClass('is-valid');
+                        }
+                    },
+                    error: function() {
+                        $('#emailStatus').html('');
+                    }
+                });
+            }
+        });
+    </script>
+}

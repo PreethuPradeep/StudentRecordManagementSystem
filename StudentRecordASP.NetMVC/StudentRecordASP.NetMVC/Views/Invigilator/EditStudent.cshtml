@@ -1,0 +1,72 @@
+@model StudentRecordASP.NetMVC.ViewModel.EditStudentViewModel
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-7">
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white text-center py-3">
+                <h4 class="mb-0">Edit Student Marks</h4>
+            </div>
+            <div class="card-body p-4">
+                <form asp-action="EditStudent" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                    
+                    <input asp-for="RollNumber" type="hidden" />
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold">Student Name</label>
+                        <input asp-for="Name" class="form-control form-control-lg" readonly />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Maths" class="form-label fw-semibold">Maths</label>
+                            <input asp-for="Maths" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Maths" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Physics" class="form-label fw-semibold">Physics</label>
+                            <input asp-for="Physics" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Physics" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="Chemistry" class="form-label fw-semibold">Chemistry</label>
+                            <input asp-for="Chemistry" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Chemistry" class="text-danger small"></span>
+                        </div>
+
+                        <div class="col-md-6 mb-3">
+                            <label asp-for="English" class="form-label fw-semibold">English</label>
+                            <input asp-for="English" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="English" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label asp-for="Programming" class="form-label fw-semibold">Programming</label>
+                            <input asp-for="Programming" class="form-control form-control-lg" type="number" min="1" max="100" placeholder="Enter marks (1-100)" />
+                            <span asp-validation-for="Programming" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-lg">Update Marks</button>
+                        <a asp-action="Dashboard" class="btn btn-outline-secondary">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

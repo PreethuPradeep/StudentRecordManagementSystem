@@ -3,7 +3,14 @@ GO
 USE StudentRecordManagementSystem;
 GO
 ---- Create tables
-CREATE TABLE Students (
+CREATE TABLE TblRole(
+	RoleId INT PRIMARY KEY IDENTITY(1,1),
+	RoleName NVARCHAR(20) NOT NULL UNIQUE,
+	IsActive BIT NOT NULL DEFAULT 1
+);
+GO
+
+CREATE TABLE TblStudent (
     Id INT PRIMARY KEY IDENTITY(1,1),
     RollNumber INT NOT NULL UNIQUE,
     Name NVARCHAR(30) NOT NULL,
@@ -21,18 +28,19 @@ CREATE TABLE Students (
 );
 GO
 
-CREATE TABLE Users (
+CREATE TABLE TblUser (
     UserId INT PRIMARY KEY IDENTITY(1,1),
     Email NVARCHAR(100) NOT NULL UNIQUE,
     PasswordHash NVARCHAR(256) NOT NULL,
     UserRole NVARCHAR(20) NOT NULL,
     IsDefaultPassword BIT NOT NULL DEFAULT 1,
     StudentId INT NULL,
-    CONSTRAINT FK_Users_Students FOREIGN KEY (StudentId) REFERENCES Students(Id)
+    CONSTRAINT FK_Users_Students FOREIGN KEY (StudentId) REFERENCES TblStudent(Id),
+	CONSTRAINT FK_Users_Roles FOREIGN KEY (UserRole) REFERENCES TblRole(RoleName)
 );
 GO
 
-
+INSERT INTO TblRole (RoleName) VALUES ('Admin'),('Invigilator'),('Student');
 DECLARE @Password NVARCHAR(50) = 'admin123';
 DECLARE @PasswordHash VARBINARY(32);
 DECLARE @PasswordHashString NVARCHAR(256);
@@ -41,7 +49,7 @@ SET @PasswordHash = HASHBYTES('SHA2_256', @Password);
 SET @PasswordHashString = CONVERT(NVARCHAR(256), @PasswordHash, 2);
 
 -- insert the admin using the variable
-INSERT INTO Users (Email, PasswordHash, UserRole, IsDefaultPassword)
+INSERT INTO TblUser (Email, PasswordHash, UserRole, IsDefaultPassword)
 VALUES (
     'admin@gmail.com',
     -- password: "admin123"

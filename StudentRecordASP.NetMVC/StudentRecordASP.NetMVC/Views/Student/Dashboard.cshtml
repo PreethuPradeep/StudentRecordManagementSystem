@@ -1,0 +1,130 @@
+@model StudentRecordASP.NetMVC.Models.Student
+
+@{
+    ViewData["Title"] = "Student Dashboard";
+}
+
+<div class="container-fluid px-4">
+    <div class="row">
+        <div class="col-12">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h2 class="mb-0 fw-bold">Student Dashboard</h2>
+                    <p class="text-muted mb-0">View your academic records and performance</p>
+                </div>
+                <div>
+                    <span class="text-muted me-3">Welcome, <strong>@Context.Session.GetString("Email")</strong></span>
+                    <a asp-controller="Account" asp-action="ChangePassword" class="btn btn-outline-primary me-2">Change Password</a>
+                    <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                        <button type="submit" class="btn btn-outline-danger">Logout</button>
+                    </form>
+                </div>
+            </div>
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    @TempData["ErrorMessage"]
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            }
+
+            @if (Model != null)
+            {
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">
+                                <h4 class="mb-0">Student Information</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col-sm-4"><strong>Roll Number:</strong></div>
+                                    <div class="col-sm-8">@Model.RolLNumber</div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-4"><strong>Name:</strong></div>
+                                    <div class="col-sm-8">@Model.Name</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header bg-success text-white">
+                                <h4 class="mb-0">Academic Performance</h4>
+                            </div>
+                            <div class="card-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Marks</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Maths</td>
+                                            <td>@Model.Maths</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Physics</td>
+                                            <td>@Model.Physics</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chemistry</td>
+                                            <td>@Model.Chemistry</td>
+                                        </tr>
+                                        <tr>
+                                            <td>English</td>
+                                            <td>@Model.English</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Programming</td>
+                                            <td>@Model.Programming</td>
+                                        </tr>
+                                        <tr class="table-info">
+                                            <td><strong>Total Marks</strong></td>
+                                            <td><strong>@(Model.Maths + Model.Physics + Model.Chemistry + Model.English + Model.Programming) / 500</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-white">
+                                <h5 class="mb-0">Summary</h5>
+                            </div>
+                            <div class="card-body">
+                                @{
+                                    var totalMarks = Model.Maths + Model.Physics + Model.Chemistry + Model.English + Model.Programming;
+                                    var percentage = (totalMarks / 500.0) * 100;
+                                    var average = totalMarks / 5.0;
+                                }
+                                <div class="mb-3">
+                                    <strong>Total Marks:</strong><br />
+                                    <span class="text-primary">@totalMarks / 500</span>
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Percentage:</strong><br />
+                                    <span class="text-primary">@percentage.ToString("F2")%</span>
+                                </div>
+                                <div class="mb-3">
+                                    <strong>Average:</strong><br />
+                                    <span class="text-primary">@average.ToString("F2")</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="alert alert-warning">
+                    No student information available.
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,3 +1,6 @@
+using StudentRecordASP.NetMVC.Repositories;
+using StudentRecordASP.NetMVC.Services;
+
 namespace StudentRecordASP.NetMVC
 {
     public class Program
@@ -6,16 +9,27 @@ namespace StudentRecordASP.NetMVC
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            builder.Services.AddScoped<IStudentRepository, StudentRepositoryImplementation>();
+            builder.Services.AddScoped<IUserRepository, UserRepositoryImplementation>();
+            builder.Services.AddScoped<IRoleRepository, RoleRepositoryImplementation>();
+            builder.Services.AddScoped<IStudentService, StudentServiceImpl>();
+            builder.Services.AddScoped<IUserService, UserServiceImpl>();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseExceptionHandler("/Account/Login");
                 app.UseHsts();
             }
 
@@ -24,11 +38,14 @@ namespace StudentRecordASP.NetMVC
 
             app.UseRouting();
 
+            // Use Session
+            app.UseSession();
+
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Account}/{action=Login}/{id?}");
 
             app.Run();
         }

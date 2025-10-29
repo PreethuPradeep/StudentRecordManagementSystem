@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\services\\userserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\services\\userserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\repositories\\userrepositoryimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\repositories\\userrepositoryimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -21,15 +42,76 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserRepositoryImplementation.cs",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAASwL8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:54:14.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserServiceImpl.cs",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAEwFYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:53:24.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAASwCUAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:34:20.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\appsettings.json",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\appsettings.json",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-29T08:33:25.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Program.cs",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Program.cs",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Program.cs",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Program.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAASwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T08:32:29.553Z",
+              "EditorCaption": ""
             }
           ]
         }
