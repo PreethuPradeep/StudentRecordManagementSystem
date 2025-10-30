@@ -34,12 +34,10 @@ namespace StudentRecordASP.NetMVC.Controllers
 
             try
             {
-                // Validate credentials
                 var isValid = await _userService.ValidateUserCredentialsAsync(model.Email, model.Password);
                 
                 if (!isValid)
                 {
-                    // Log for debugging
                     var existingUser = await _userService.GetUserByEmailAsync(model.Email);
                     if (existingUser != null)
                     {

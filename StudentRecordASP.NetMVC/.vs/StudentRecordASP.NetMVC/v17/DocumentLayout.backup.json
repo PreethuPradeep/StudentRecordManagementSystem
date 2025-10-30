@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\services\\userserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\services\\userserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\repositories\\userrepositoryimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\repositories\\userrepositoryimplementation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\invigilator\\_studentdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\invigilator\\_studentdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\account\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\admin\\createuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|d:\\asp.netmachinetest\\studentrecordasp.netmvc\\studentrecordasp.netmvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{104712F1-A7F9-4E70-A4DD-FA3E448FAF15}|StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC.csproj|solutionrelative:studentrecordasp.netmvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,87 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserRepositoryImplementation.cs",
-              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
-              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
-              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
-              "RelativeToolTip": "StudentRecordASP.NetMVC\\Repositories\\UserRepositoryImplementation.cs",
-              "ViewState": "AgIAALIAAAAAAAAAAAASwL8AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T08:54:14.641Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:27:19.473Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserServiceImpl.cs",
-              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
-              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
-              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
-              "RelativeToolTip": "StudentRecordASP.NetMVC\\Services\\UserServiceImpl.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAEwFYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T08:53:24.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "StudentRecordASP.NetMVC\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAASwCUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T08:34:20.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\appsettings.json",
-              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\appsettings.json",
-              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\appsettings.json",
-              "RelativeToolTip": "StudentRecordASP.NetMVC\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-29T08:33:25.216Z",
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Student\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Student\\Dashboard.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Student\\Dashboard.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Student\\Dashboard.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAA8AAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:27:12.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Program.cs",
-              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Program.cs",
-              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Program.cs",
-              "RelativeToolTip": "StudentRecordASP.NetMVC\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAASwC0AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T08:32:29.553Z",
+              "Title": "_StudentDetails.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Invigilator\\_StudentDetails.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Invigilator\\_StudentDetails.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Invigilator\\_StudentDetails.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Invigilator\\_StudentDetails.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:26:45.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Account\\ChangePassword.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Account\\ChangePassword.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Account\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:26:10.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:26:00.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateUser.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Admin\\CreateUser.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Admin\\CreateUser.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Admin\\CreateUser.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:25:57.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:25:52.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "StudentRecordASP.NetMVC\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\ASP.NETMachineTest\\StudentRecordASP.NetMVC\\StudentRecordASP.NetMVC\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "StudentRecordASP.NetMVC\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-30T07:22:33.636Z",
               "EditorCaption": ""
             }
           ]
